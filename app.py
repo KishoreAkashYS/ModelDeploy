@@ -9,8 +9,10 @@ import joblib
 import re
 from sklearn.feature_extraction.text import CountVectorizer
 import nltk
+from nltk.downloader import download, download_shell
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+
 
 
 app = Flask(__name__)
