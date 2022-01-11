@@ -2,6 +2,7 @@ import flask
 from flask import Flask, jsonify, request
 import pickle
 import numpy as np
+from logging import FileHandler,WARNING
 import pandas as pd
 from sklearn import linear_model
 #from sklearn.externals import joblib
@@ -15,7 +16,7 @@ from nltk.stem import WordNetLemmatizer
 
 
 
-app = Flask(__name__, template_folder="template")
+app = Flask(__name__, template_folder="templates")
 vect = pickle.load(open('tfid.nav', 'rb'))
 classifier = pickle.load(open('gnb.nav','rb'))
 lemmatizer = WordNetLemmatizer()
