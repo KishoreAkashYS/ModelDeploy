@@ -36,7 +36,7 @@ def preprocess(raw_mess):
 def index():
     return flask.render_template('index.html')
 
-@app.route('/predict/<string:prediction>',methods=['POST'])
+@app.route('/predict',methods=['POST'])
 def predict():
     to_predict_list = request.form.to_dict()
     review_text = preprocess(to_predict_list['review_text'])
