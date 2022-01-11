@@ -15,7 +15,7 @@ from nltk.stem import WordNetLemmatizer
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="template")
 vect = pickle.load(open('tfid.nav', 'rb'))
 classifier = pickle.load(open('gnb.nav','rb'))
 lemmatizer = WordNetLemmatizer()
