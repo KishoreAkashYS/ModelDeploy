@@ -2,15 +2,9 @@ import flask
 from flask import Flask, jsonify, request
 import pickle
 import numpy as np
-from logging import FileHandler,WARNING
 import pandas as pd
 from sklearn import linear_model
-#from sklearn.externals import joblib
-import joblib
 import re
-from sklearn.feature_extraction.text import CountVectorizer
-import nltk
-from nltk.downloader import download, download_shell
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
