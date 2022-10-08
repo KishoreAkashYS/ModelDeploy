@@ -5,6 +5,8 @@ import numpy as np
 import pandas as pd
 from sklearn import linear_model
 import re
+import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
